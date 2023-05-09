@@ -1,0 +1,8 @@
+# .env file for docker
+.env
+
+# for intellij
+.idea
+
+# for cargo
+target

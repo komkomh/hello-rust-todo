@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql:
+    build: ./docker/mysql
+    container_name: hello-rust-todo_mysql
+    platform: linux/x86_64
+    tty: true
+    volumes:
+      - ./docker/mysql/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - "3306:3306"
+    environment:
+      - TZ=Asia/Tokyo
+
