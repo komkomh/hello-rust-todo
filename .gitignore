@@ -4,5 +4,8 @@
 # for intellij
 .idea
 
-# for cargo
+# rust
 target
+
+# node
+node_modules
